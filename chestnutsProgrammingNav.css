@@ -1,98 +1,186 @@
-*{
+* {
     font-family: Copperplate, Arial, sans-serif;
     padding: 0;
     margin: 0;
 }
-html{
-    background: rgb(200,200,200);
+
+html {
+    background: rgb(200, 200, 200);
 }
-body{
+
+body {
     width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-nav{
+nav {
     width: 100%;
-    background: rgb(70,70,70);
+    background: rgb(70, 70, 70);
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
 }
-nav ul li{
+
+nav ul li {
     width: 15%;
     display: flex;
     margin: 0;
 }
-nav ul li a{
+
+nav ul li a {
     width: 70%;
     display: flex;
     justify-content: center;
 }
-nav ul li div{
+
+nav ul li div {
     width: 100%;
 }
-#dropDown:hover #dropDownContent{
+
+#dropDown:hover #dropDownContent {
     display: flex;
 }
-#dropDownContent{
+
+#dropDownContent {
     position: absolute;
     display: none;
-    background: rgb(70,70,70);
+    background: rgb(70, 70, 70);
     font-size: 1em;
     width: 100%;
     left: 0;
-    border-top: 1px solid rgb(150,150,150);
+    border-top: 1px solid rgb(150, 150, 150);
     margin-top: 28px;
     height: 100px;
 }
-#dropDownContent ul{
+
+#dropDownContent ul {
     width: 100%;
 }
-#dropDownContent ul li{
+
+#dropDownContent ul li {
     width: 14%;
     display: flex;
 }
-#dropDownContent a{
+
+#dropDownContent a {
     display: flex;
     width: 100%;
 }
-a{
+
+a {
     padding-top: 20px;
-    color: rgb(225,225,225);
+    color: rgb(225, 225, 225);
     text-decoration: none;
     font-size: 1em;
 }
-a:hover{
+
+a:hover {
     color: #53d5fd;
 
 }
-.dynamic-large{
+
+.dynamic-large {
     width: 120%;
     margin-right: 16px;
     color: #53d5fd;
 }
 
-footer{
+footer {
     clear: both;
     width: 100%;
-    background: rgb(70,70,70);
+    background: rgb(70, 70, 70);
     height: 500px;
     margin-top: auto;
     padding: 20px;
 }
-footer ul{
+
+footer ul {
     width: 100%;
     list-style: none;
-    background: rgb(70,70,70);
+    background: rgb(70, 70, 70);
 }
-footer ul li{
+
+footer ul li {
     width: 14%;
     float: left;
-    background: rgb(70,70,70);
+    background: rgb(70, 70, 70);
 }
-footer ul li ul li{
+
+footer ul li ul li {
     float: none;
+}
+
+#menuIcon {
+    display: none;
+}
+
+@media only screen and (max-width: 1600px) {
+    footer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    nav.topnav {
+        display: none;
+    }
+
+    #menuIcon {
+        display: block;
+        width: 100%;
+        background: rgb(70, 70, 70);
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    footer {
+        display: none;
+    }
+
+    nav.responsive {
+        position: relative;
+    }
+
+    .responsive {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .responsive nav, nav ul, nav ul li, nav ul li a {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+    #dropDown:hover #dropDownContent{
+        display: block;
+    }
+
+    #dropDownContent {
+        display: none;
+        width: 100%;
+        height: 250px;
+    }
+
+    #dropDownContent ul, #dropDownContent ul li,  #dropDownContent a {
+        width: 100%;
+        float: left;
+    }
+
+    #logo{
+        display: none;
+    }
+
+
+
 }
