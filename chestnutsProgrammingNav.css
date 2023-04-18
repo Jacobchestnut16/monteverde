@@ -126,14 +126,14 @@ footer ul li ul li {
     display: none;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 800px) {
     footer {
         display: none;
     }
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     nav.topnav {
         display: none;
     }
@@ -166,7 +166,7 @@ footer ul li ul li {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 600px) {
     footer {
         display: none;
     }
