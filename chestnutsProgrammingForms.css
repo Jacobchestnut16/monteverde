@@ -1,0 +1,18 @@
+input{
+    border-radius: 10px;
+    width: 45%;
+}
+#message{
+    width: 45%;
+    resize: none;
+    border-radius: 10px;
+}
+label{
+    font-size: 1.25em;
+}
+#submit{
+    background: rgb(73, 137, 224);
+    color: rgb(225,225,225);
+    font-size: 1.25em;
+    letter-spacing: 2.5px;
+}
