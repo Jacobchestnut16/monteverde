@@ -16,6 +16,15 @@ function myFunction() {
     }
 }
 
+function alter(){
+    var x = document.getElementById("dropDownContent");
+    if (x.className === "men") {
+        x.className += "res";
+    } else {
+        x.className = "men";
+    }
+}
+
 function check() {
     if (x.className !== "topnav") {
         x.className = "topnav";
