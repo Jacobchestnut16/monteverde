@@ -212,6 +212,17 @@ footer ul li ul li {
         display: none;
     }
 
-
+    #dropDownContent {
+        position: absolute;
+        background: rgb(70, 70, 70);
+        font-size: 1em;
+        width: 100%;
+        left: 0;
+        top: 186px;
+        border-top: 1px solid rgb(150, 150, 150);
+        margin-top: 28px;
+        height: 250px;
+        flex-direction: column;
+    }
 
 }
