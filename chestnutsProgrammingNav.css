@@ -41,7 +41,7 @@ nav ul li div {
     width: 100%;
 }
 
-#dropDown:hover #dropDownContent {
+#dropDown:hover #dropDownContent.men {
     display: flex;
 }
 
@@ -129,6 +129,9 @@ footer ul li ul li {
     nav.topnav {
         display: none;
     }
+    div.men{
+        display: none;
+    }
 
     #menuIcon {
         display: block;
@@ -137,6 +140,16 @@ footer ul li ul li {
     }
 
     .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    #dropDownContent {
+        display: none;
+        width: 100%;
+        height: 250px;
+    }
+
+    .men a:not(:first-child) {
         display: none;
     }
 }
@@ -162,17 +175,18 @@ footer ul li ul li {
         float: left;
     }
 
-    #dropDown:hover #dropDownContent{
+
+    div.res{
+        position: relative;
+    }
+    .res{
         display: block;
+        float: none;
+        text-align: left;
     }
 
-    #dropDownContent {
-        display: none;
-        width: 100%;
-        height: 250px;
-    }
-
-    #dropDownContent ul, #dropDownContent ul li,  #dropDownContent a {
+    .res div ul, div ul li,  div ul li a {
+        display: block;
         width: 100%;
         float: left;
     }
