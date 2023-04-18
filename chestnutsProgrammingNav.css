@@ -66,13 +66,13 @@ a{
     font-size: 1em;
 }
 a:hover{
-    color: rgb(73, 137, 224);
+    color: #53d5fd;
 
 }
 .dynamic-large{
     width: 120%;
-    margin-right: 1em;
-    color: rgb(73, 137, 224);
+    margin-right: 16px;
+    color: #53d5fd;
 }
 
 footer{
