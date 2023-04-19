@@ -30,3 +30,10 @@ function check() {
         x.className = "topnav";
     }
 }
+
+function menuClick(){
+    var x = document.getElementById("dropDownContent");
+    var y = document.getElementById("topNav");
+    x.className = "men";
+    y.className = "topnav";
+}
