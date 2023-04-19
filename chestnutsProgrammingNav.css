@@ -90,6 +90,9 @@ a:hover {
     color: #53d5fd;
 
 }
+a:active::after{
+    color: #53d5fd;
+}
 
 .dynamic-large {
     width: 120%;
